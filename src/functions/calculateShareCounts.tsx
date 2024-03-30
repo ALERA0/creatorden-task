@@ -42,6 +42,10 @@ export function calculateShareCounts(influencer, year) {
     const staticReachPercentage = parseFloat(((reachRates.static / shareCounts.static  ) * 100).toFixed(2));
     const reelsReachPercentage = parseFloat(((reachRates.reels / shareCounts.reels  ) * 100).toFixed(2));
 
+    const storyReachRatePercentage = parseFloat(((reachRates.story / shareCounts.story) * 100).toFixed(2));
+    const staticReachRatePercentage = parseFloat(((reachRates.static / shareCounts.static) * 100).toFixed(2));
+    const reelsReachRatePercentage = parseFloat(((reachRates.reels / shareCounts.reels) * 100).toFixed(2));
+
     return {
         shareCounts,
         storyPercentage,
@@ -49,6 +53,9 @@ export function calculateShareCounts(influencer, year) {
         reelsPercentage,
         storyReachPercentage,
         staticReachPercentage,
-        reelsReachPercentage
+        reelsReachPercentage,
+        storyReachRatePercentage,
+        staticReachRatePercentage,
+        reelsReachRatePercentage
     };
 }

@@ -10,7 +10,7 @@ import CircleWithText from "@/components/CircleWithText";
 import { Spinner } from "flowbite-react";
 
 export default function HomePage({ params }) {
-  const [isLoading, setIsLoading] = useState(true); 
+  const [isLoading, setIsLoading] = useState(true);
 
   const reachRate2020 = calculateTotalAndReachRate(
     params.tab ? params.tab : params,
@@ -34,7 +34,6 @@ export default function HomePage({ params }) {
     (reachRate2021 - reachRate2020).toFixed(2)
   );
 
-
   // 2 saniye sonra yükleme durumunu false yap
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -46,12 +45,11 @@ export default function HomePage({ params }) {
   }, []);
 
 
-
   return (
     <main className="w-full sm:h-screen h-full bg-[#C7CFD1] flex justify-center items-center xl:px-0 px-2 sm:py-0 py-2">
       {isLoading ? (
         <div className="w-full flex justify-center items-center h-full ">
-          <Spinner aria-label="Loading"  size="xl" color="warning"/>
+          <Spinner aria-label="Loading" size="xl" color="warning" />
           <p className="text-black">Loading...</p>
         </div>
       ) : (
@@ -83,6 +81,9 @@ export default function HomePage({ params }) {
             <CircleWithText text={"DD"} />
             <CircleWithText text={"EE"} />
             <CircleWithText text={"FF"} />
+            <CircleWithText text={"GG"} />
+            <CircleWithText text={"HH"} />
+
           </div>
           <div className="w-full  justify-between text-black  grid grid-cols-3   ">
             <p className="font-semibold sm:pl-6 pl-2 sm:text-xl text-base  text-start col-span-1 ">
@@ -114,9 +115,32 @@ export default function HomePage({ params }) {
                 totalShare2020.storyReachPercentage
             ).toFixed(2)}
             backgroundTrans={"bg-[#CB9CDA]"}
-            backgroundFirst={totalShare2020.storyReachPercentage>totalShare2021.storyReachPercentage ? "bg-[#B32BD5]" : "bg-[#BA80C9]"}
-            backgroundSecond={totalShare2021.storyReachPercentage<totalShare2020.storyReachPercentage ?   "bg-[#BA80C9]":"bg-[#B32BD5]"}
-
+            backgroundFirst={
+              totalShare2020.storyReachPercentage >
+              totalShare2021.storyReachPercentage
+                ? "bg-[#B32BD5]"
+                : "bg-[#BA80C9]"
+            }
+            backgroundSecond={
+              totalShare2021.storyReachPercentage <
+              totalShare2020.storyReachPercentage
+                ? "bg-[#BA80C9]"
+                : "bg-[#B32BD5]"
+            }
+            reachRateTotalStoryPercentage={totalShare2020.storyReachPercentage}
+            reachRateTotalReelsPercentage={totalShare2020.reelsReachPercentage}
+            reachRateTotalStaticPercentage={
+              totalShare2020.staticReachPercentage
+            }
+            reachRateTotalStoryPercentage2021={
+              totalShare2021.storyReachPercentage
+            }
+            reachRateTotalReelsPercentage2021={
+              totalShare2021.reelsReachPercentage
+            }
+            reachRateTotalStaticPercentage2021={
+              totalShare2021.staticReachPercentage
+            }
           />
           <InfoLineWithPerc
             firstWidth={totalShare2020.staticReachPercentage}
@@ -131,9 +155,32 @@ export default function HomePage({ params }) {
                 totalShare2020.staticReachPercentage
             ).toFixed(2)}
             backgroundTrans={"bg-[#F0CDB7]"}
-            backgroundFirst={totalShare2020.staticReachPercentage>totalShare2021.staticReachPercentage ? "bg-[#DC6A19]" : "bg-[#E29D6B]"}
-            backgroundSecond={totalShare2021.staticReachPercentage<totalShare2020.staticReachPercentage ?   "bg-[#E29D6B]":"bg-[#DC6A19]"}
-
+            backgroundFirst={
+              totalShare2020.staticReachPercentage >
+              totalShare2021.staticReachPercentage
+                ? "bg-[#DC6A19]"
+                : "bg-[#E29D6B]"
+            }
+            backgroundSecond={
+              totalShare2021.staticReachPercentage <
+              totalShare2020.staticReachPercentage
+                ? "bg-[#E29D6B]"
+                : "bg-[#DC6A19]"
+            }
+            reachRateTotalStoryPercentage={totalShare2020.storyReachPercentage}
+            reachRateTotalReelsPercentage={totalShare2020.reelsReachPercentage}
+            reachRateTotalStaticPercentage={
+              totalShare2020.staticReachPercentage
+            }
+            reachRateTotalStoryPercentage2021={
+              totalShare2021.storyReachPercentage
+            }
+            reachRateTotalReelsPercentage2021={
+              totalShare2021.reelsReachPercentage
+            }
+            reachRateTotalStaticPercentage2021={
+              totalShare2021.staticReachPercentage
+            }
           />
           <InfoLineWithPerc
             firstWidth={totalShare2020.reelsReachPercentage}
@@ -148,9 +195,32 @@ export default function HomePage({ params }) {
                 totalShare2020.reelsReachPercentage
             ).toFixed(2)}
             backgroundTrans={"bg-[#C1E9F3]"}
-            backgroundFirst={totalShare2020.reelsReachPercentage>totalShare2021.reelsReachPercentage ? "bg-[#047BE2]" : "bg-[#61A8E6]"}
-            backgroundSecond={totalShare2021.reelsReachPercentage<totalShare2020.reelsReachPercentage ?   "bg-[#61A8E6]":"bg-[#047BE2]"}
-
+            backgroundFirst={
+              totalShare2020.reelsReachPercentage >
+              totalShare2021.reelsReachPercentage
+                ? "bg-[#047BE2]"
+                : "bg-[#61A8E6]"
+            }
+            backgroundSecond={
+              totalShare2021.reelsReachPercentage <
+              totalShare2020.reelsReachPercentage
+                ? "bg-[#61A8E6]"
+                : "bg-[#047BE2]"
+            }
+            reachRateTotalStoryPercentage={totalShare2020.storyReachPercentage}
+            reachRateTotalReelsPercentage={totalShare2020.reelsReachPercentage}
+            reachRateTotalStaticPercentage={
+              totalShare2020.staticReachPercentage
+            }
+            reachRateTotalStoryPercentage2021={
+              totalShare2021.storyReachPercentage
+            }
+            reachRateTotalReelsPercentage2021={
+              totalShare2021.reelsReachPercentage
+            }
+            reachRateTotalStaticPercentage2021={
+              totalShare2021.staticReachPercentage
+            }
           />
           <CircleWithTextGroup />
           <div className="w-full px-4 flex flex-col mt-4 gap-2">

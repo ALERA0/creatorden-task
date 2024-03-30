@@ -1,4 +1,6 @@
+import { Tooltip } from "@nextui-org/react";
 import React from "react";
+import { PieChart } from "react-minimal-pie-chart";
 
 const InfoLineWithPerc = ({
   firstWidth,
@@ -11,11 +13,69 @@ const InfoLineWithPerc = ({
   change,
   backgroundTrans,
   backgroundFirst,
-  backgroundSecond
+  backgroundSecond,
+  reachRateTotalStoryPercentage,
+  reachRateTotalReelsPercentage,
+  reachRateTotalStaticPercentage,
+  reachRateTotalStoryPercentage2021,
+  reachRateTotalReelsPercentage2021,
+  reachRateTotalStaticPercentage2021
 }) => {
+
+
+  const firstPieData = [
+    {
+      title: "Story",
+      value: reachRateTotalStoryPercentage,
+      color: "#BA80C9",
+    },
+    {
+      title: "Static",
+      value: reachRateTotalStaticPercentage,
+      color: "#E29D6B",
+    },
+    {
+      title: "Reels",
+      value: reachRateTotalReelsPercentage,
+      color: "#047BE2",
+    },
+  ];
+
+  const secondPieData = [
+    {
+      title: "Story",
+      value: reachRateTotalStoryPercentage2021,
+      color: "#BA80C9",
+    },
+    {
+      title: "Static",
+      value: reachRateTotalStaticPercentage2021,
+      color: "#E29D6B",
+    },
+    {
+      title: "Reels",
+      value: reachRateTotalReelsPercentage2021,
+      color: "#047BE2",
+    },
+  ];
+
+  
+
+
+
   return (
-    <div className={`w-full  justify-between text-black grid grid-cols-3 mt-4 ${backgroundTrans} `}>
-      <div className="sm:col-span-1 hidden sm:flex w-full pr-4">
+    <div
+      className={`w-full  justify-between text-black grid grid-cols-3 mt-4 ${backgroundTrans} `}
+    >
+      <Tooltip
+        className="sm:col-span-1 hidden sm:flex w-full pr-4"
+        content={
+          <PieChart
+          data={firstPieData}
+          label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
+        />
+        }
+      >
         <div className="w-full rounded-r-lg">
           <div
             className={`${backgroundFirst} font-medium text-blue-100 text-center flex p-0.5 leading-none rounded-r-lg h-12  items-center justify-start xl:pl-4 text-xl `}
@@ -24,7 +84,7 @@ const InfoLineWithPerc = ({
             {firstWidth}%
           </div>
         </div>
-      </div>
+      </Tooltip>
       <div className="col-span-1 sm:hidden w-full pr-4">
         <div className="w-4/5 rounded-r-lg flex gap-1">
           <div
@@ -50,7 +110,15 @@ const InfoLineWithPerc = ({
         </p>
         <p className="col-span-1 justify-center flex">{secondPerc}</p>
       </div>
-      <div className="sm:col-span-1 hidden sm:flex w-full pl-4">
+      <Tooltip
+        className="sm:col-span-1 hidden sm:flex w-full pl-4"
+        content={
+          <PieChart
+          data={secondPieData}
+          label={({ dataEntry }) => `${Math.round(dataEntry.percentage)} %`}
+        />
+        }
+      >
         <div className="w-full rounded-l-lg flex  justify-end ">
           <p
             className={`${
@@ -69,11 +137,13 @@ const InfoLineWithPerc = ({
             </div>
           </div>
         </div>
-      </div>
+      </Tooltip>
       <div className="col-span-1 sm:hidden w-full pl-3">
         <div className="w-full rounded-l-lg flex  justify-end ">
           <div className="w-5/6 flex justify-end gap-1">
-            <p className="flex justify-center items-center text-xs">{secondWidth}%</p>
+            <p className="flex justify-center items-center text-xs">
+              {secondWidth}%
+            </p>
             <div
               className={`${backgroundSecond} font-medium text-blue-100 text-center py-0.5 leading-none rounded-l-lg h-12 flex  items-center justify-end xl:pr-4 text-xl`}
               style={{ width: `${secondWidth}%` }}

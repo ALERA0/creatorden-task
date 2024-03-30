@@ -6,7 +6,7 @@ const CircleWithTextGroup = () => {
   const top3 = findTop3InfluencersByReachRate();
 
   return (
-    <div className="w-full bg-white flex sm:flow-row flex-col justify-between px-4 py-2 mt-4 shadow-md">
+    <div className="w-full bg-white sm:flex flex-col sm:flex-row  justify-between px-4 py-2 mt-4 shadow-md">
       <div className="sm:flex hidden justify-start gap-2">
         {top3.slice(0, 3).map((item, index) => (
           <CircleWithText key={index} text={item.influencer} />

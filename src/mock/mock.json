@@ -1,0 +1,338 @@
+[
+    {
+        "influencer": "AA",
+        "year": 2020,
+        "type": "story",
+        "count": 32,
+        "reach_rate": 28
+    },
+    {
+        "influencer": "AA",
+        "year": 2020,
+        "type": "static",
+        "count": 14,
+        "reach_rate": 10
+    },
+    {
+        "influencer": "AA",
+        "year": 2020,
+        "type": "reels",
+        "count": 10,
+        "reach_rate": 7
+    },
+    {
+        "influencer": "AA",
+        "year": 2021,
+        "type": "story",
+        "count": 53,
+        "reach_rate": 47
+    },
+    {
+        "influencer": "AA",
+        "year": 2021,
+        "type": "reels",
+        "count": 90,
+        "reach_rate": 87
+    },
+    {
+        "influencer": "AA",
+        "year": 2021,
+        "type": "static",
+        "count": 42,
+        "reach_rate": 39
+    },
+    {
+        "influencer": "BB",
+        "year": 2020,
+        "type": "story",
+        "count": 85,
+        "reach_rate": 79
+    },
+    {
+        "influencer": "BB",
+        "year": 2020,
+        "type": "static",
+        "count": 24,
+        "reach_rate": 21
+    },
+    {
+        "influencer": "BB",
+        "year": 2020,
+        "type": "reels",
+        "count": 33,
+        "reach_rate": 30
+    },
+    {
+        "influencer": "BB",
+        "year": 2021,
+        "type": "static",
+        "count": 23,
+        "reach_rate": 19
+    },
+    {
+        "influencer": "BB",
+        "year": 2021,
+        "type": "reels",
+        "count": 12,
+        "reach_rate": 10
+    },
+    {
+        "influencer": "BB",
+        "year": 2021,
+        "type": "story",
+        "count": 53,
+        "reach_rate": 48
+    },
+    {
+        "influencer": "CC",
+        "year": 2020,
+        "type": "story",
+        "count": 35,
+        "reach_rate": 31
+    },
+    {
+        "influencer": "CC",
+        "year": 2020,
+        "type": "static",
+        "count": 45,
+        "reach_rate": 41
+    },
+    {
+        "influencer": "CC",
+        "year": 2020,
+        "type": "reels",
+        "count": 4,
+        "reach_rate": 2
+    },
+    {
+        "influencer": "CC",
+        "year": 2021,
+        "type": "reels",
+        "count": 53,
+        "reach_rate": 50
+    },
+    {
+        "influencer": "CC",
+        "year": 2021,
+        "type": "static",
+        "count": 34,
+        "reach_rate": 30
+    },
+    {
+        "influencer": "CC",
+        "year": 2021,
+        "type": "story",
+        "count": 24,
+        "reach_rate": 21
+    },
+    {
+        "influencer": "DD",
+        "year": 2020,
+        "type": "story",
+        "count": 60,
+        "reach_rate": 54
+    },
+    {
+        "influencer": "DD",
+        "year": 2020,
+        "type": "static",
+        "count": 80,
+        "reach_rate": 72
+    },
+    {
+        "influencer": "DD",
+        "year": 2020,
+        "type": "reels",
+        "count": 17,
+        "reach_rate": 15
+    },
+    {
+        "influencer": "DD",
+        "year": 2021,
+        "type": "static",
+        "count": 38,
+        "reach_rate": 35
+    },
+    {
+        "influencer": "DD",
+        "year": 2021,
+        "type": "reels",
+        "count": 92,
+        "reach_rate": 88
+    },
+    {
+        "influencer": "DD",
+        "year": 2021,
+        "type": "story",
+        "count": 57,
+        "reach_rate": 51
+    },
+    {
+        "influencer": "EE",
+        "year": 2020,
+        "type": "story",
+        "count": 41,
+        "reach_rate": 37
+    },
+    {
+        "influencer": "EE",
+        "year": 2020,
+        "type": "static",
+        "count": 35,
+        "reach_rate": 32
+    },
+    {
+        "influencer": "EE",
+        "year": 2020,
+        "type": "reels",
+        "count": 10,
+        "reach_rate": 9
+    },
+    {
+        "influencer": "EE",
+        "year": 2021,
+        "type": "static",
+        "count": 49,
+        "reach_rate": 45
+    },
+    {
+        "influencer": "EE",
+        "year": 2021,
+        "type": "reels",
+        "count": 76,
+        "reach_rate": 72
+    },
+    {
+        "influencer": "EE",
+        "year": 2021,
+        "type": "story",
+        "count": 65,
+        "reach_rate": 60
+    },
+    {
+        "influencer": "FF",
+        "year": 2020,
+        "type": "story",
+        "count": 59,
+        "reach_rate": 53
+    },
+    {
+        "influencer": "FF",
+        "year": 2020,
+        "type": "static",
+        "count": 98,
+        "reach_rate": 94
+    },
+    {
+        "influencer": "FF",
+        "year": 2020,
+        "type": "reels",
+        "count": 74,
+        "reach_rate": 68
+    },
+    {
+        "influencer": "FF",
+        "year": 2021,
+        "type": "static",
+        "count": 62,
+        "reach_rate": 58
+    },
+    {
+        "influencer": "FF",
+        "year": 2021,
+        "type": "reels",
+        "count": 44,
+        "reach_rate": 40
+    },
+    {
+        "influencer": "FF",
+        "year": 2021,
+        "type": "story",
+        "count": 51,
+        "reach_rate": 46
+    },
+    {
+        "influencer": "GG",
+        "year": 2020,
+        "type": "story",
+        "count": 52,
+        "reach_rate": 48
+    },
+    {
+        "influencer": "GG",
+        "year": 2020,
+        "type": "static",
+        "count": 42,
+        "reach_rate": 39
+    },
+    {
+        "influencer": "GG",
+        "year": 2020,
+        "type": "reels",
+        "count": 34,
+        "reach_rate": 31
+    },
+    {
+        "influencer": "GG",
+        "year": 2021,
+        "type": "static",
+        "count": 26,
+        "reach_rate": 23
+    },
+    {
+        "influencer": "GG",
+        "year": 2021,
+        "type": "reels",
+        "count": 68,
+        "reach_rate": 63
+    },
+    {
+        "influencer": "GG",
+        "year": 2021,
+        "type": "story",
+        "count": 58,
+        "reach_rate": 54
+    },
+    {
+        "influencer": "HH",
+        "year": 2020,
+        "type": "story",
+        "count": 34,
+        "reach_rate": 30
+    },
+    {
+        "influencer": "HH",
+        "year": 2020,
+        "type": "static",
+        "count": 48,
+        "reach_rate": 44
+    },
+    {
+        "influencer": "HH",
+        "year": 2020,
+        "type": "reels",
+        "count": 45,
+        "reach_rate": 41
+    },
+    {
+        "influencer": "HH",
+        "year": 2021,
+        "type": "static",
+        "count": 29,
+        "reach_rate": 26
+    },
+    {
+        "influencer": "HH",
+        "year": 2021,
+        "type": "reels",
+        "count": 53,
+        "reach_rate": 49
+    },
+    {
+        "influencer": "HH",
+        "year": 2021,
+        "type": "story",
+        "count": 61,
+        "reach_rate": 56
+    }
+]
